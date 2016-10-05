@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page"
+    android:id="@+id/root">
+
+    <FrameLayout
+        android:id="@+id/black_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@color/text_color_black"
+        android:orientation="vertical">
+    </FrameLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <include layout="@layout/activity_register_retrieve_title"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/text45"
+                    android:textColor="@color/text_color_white"
+                    android:layout_gravity="center"
+                    android:text="@string/change_pwd"
+                    android:textSize="@dimen/text45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/text45"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_marginRight="@dimen/text30"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90">
+
+                    <EditText
+                        android:id="@+id/et_phone_number"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textSize="@dimen/text35"
+                        android:paddingLeft="@dimen/text15"
+                        android:textColor="@color/text_color_white"
+                        android:textColorHint="@color/text_color_white"
+                        android:hint="@string/please_input_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        />
+                    <include layout="@layout/split_line" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_marginRight="@dimen/text30"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/text30">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:maxLength="4"
+                            android:hint="@string/please_input_codes"
+                            android:paddingLeft="@dimen/text15"
+                            android:textColor="@color/text_color_white"
+                            android:textColorHint="@color/text_color_white"
+                            android:textSize="@dimen/text35" />
+                        <include layout="@layout/split_line" />
+                    </LinearLayout>
+                    <com.supertreasure.widget.TimeButton
+                        android:id="@+id/tb_getcode"
+                        android:layout_marginLeft="@dimen/text45"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/get_code"
+                        android:textSize="@dimen/text30"
+                        android:textColor="@color/text_color_white"
+                        android:background="@drawable/layout_getcode_button"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text105"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_marginRight="@dimen/text30"
+                    android:layout_marginTop="@dimen/text45"
+                    android:text="@string/next_step"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text35"
+                    android:background="@drawable/layout_login_button"
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</FrameLayout>

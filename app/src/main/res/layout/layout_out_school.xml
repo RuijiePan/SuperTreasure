@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/text_grey_line"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_banner"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.supertreasure.util.ChildViewPager
+            android:id="@+id/bannerViewPager"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height">
+        </com.supertreasure.util.ChildViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:orientation="horizontal"
+            android:gravity="bottom|center_horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/banner_dot_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_news_out"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/text30"
+        android:background="@color/text_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/text30"
+            android:layout_marginBottom="@dimen/text30"
+            android:textSize="@dimen/text60"
+            android:layout_marginLeft="@dimen/text60"
+            android:text="@string/topnnews_out"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/text60"
+            android:src="@drawable/boult"
+            android:layout_width="@dimen/text60"
+            android:layout_height="@dimen/text60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_friend_out"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/text30"
+        android:background="@color/text_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/text30"
+            android:layout_marginBottom="@dimen/text30"
+            android:textSize="@dimen/text60"
+            android:layout_marginLeft="@dimen/text60"
+            android:text="@string/friend_out"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/text60"
+            android:src="@drawable/boult"
+            android:layout_width="@dimen/text60"
+            android:layout_height="@dimen/text60" />
+    </LinearLayout>
+</LinearLayout>

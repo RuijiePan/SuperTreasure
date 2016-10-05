@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336358322 -->
+<screen>
+    <_content layout="@layout/security_verification" >
+        <!-- Error creating screen file for file security_verification.xml:
+        start tag unexpected character # (position: TEXT seen ...text30"\r\n        android:text="\u6d93\u5b29\u7af4\u59dd\ufffd\r\n        android:textColor="#... @107:29)  -->
+    </_content>
+</screen>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_mood_background"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/mood_background"
+        android:layout_height="@dimen/mood_background">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/civ_photo"
+            app:roundAsCircle="true"
+            app:placeholderImage="@drawable/ic_girl"
+            app:failureImage="@drawable/icon_failure"
+            app:roundingBorderWidth="@dimen/text5"
+            app:roundingBorderColor="@color/text_color_white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/text200"
+            android:layout_height="@dimen/text200" />
+
+        <TextView
+            android:id="@+id/tv_nickName"
+            android:text="@string/tv_nickName"
+            android:textSize="@dimen/text45"
+            android:layout_marginTop="@dimen/text30"
+            android:textColor="@color/text_color_white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

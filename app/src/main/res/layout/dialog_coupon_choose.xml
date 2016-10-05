@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.supertreasure.main.ActivityMine"
+    android:orientation="vertical"
+    android:alpha="0.5"
+    android:background="@color/grey_backgroud"
+    android:id="@+id/root"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/dialog_button_selector"
+            android:id="@+id/tv_hadselling"
+            android:text="@string/tx_activity_coupon_hadselling"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textSize="@dimen/text30"
+            android:textColor="@color/text_color_black"
+            android:layout_height="match_parent" />
+        <TextView
+            android:background="@drawable/dialog_button_selector"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:id="@+id/tv_hadsold"
+            android:gravity="center"
+            android:text="@string/tx_activity_coupon_hadsold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="@dimen/text30"
+            android:textColor="@color/text_color_black"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:background="@drawable/dialog_button_selector"
+            android:id="@+id/tv_hadsoldout"
+            android:text="@string/tx_activity_coupon_hadsoldout"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textSize="@dimen/text30"
+            android:textColor="@color/text_color_black"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

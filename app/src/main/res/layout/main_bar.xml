@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text90"
+    android:layout_alignParentBottom="true"
+     >
+
+    <View style="@style/cutting_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:weightSum="4"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        >
+
+        <FrameLayout
+            android:id="@+id/fl_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            >
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="@dimen/text60"
+                android:layout_height="@dimen/text60"
+                android:layout_gravity="center"
+                android:src="@drawable/tabbar_home" />
+         
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_coupon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+           >
+
+            <ImageView
+                android:id="@+id/iv_coupon"
+                android:layout_width="@dimen/text75"
+                android:layout_height="@dimen/text75"
+                android:layout_gravity="center"
+                android:src="@drawable/tabbar_coupon"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_good"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            >
+
+            <ImageView
+                android:id="@+id/iv_good"
+                android:layout_width="@dimen/text60"
+                android:layout_height="@dimen/text60"
+                android:layout_gravity="center"
+                android:src="@drawable/tabbar_good"
+                android:visibility="visible" />
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            >
+
+            <ImageView
+                android:id="@+id/iv_mine"
+                android:layout_width="@dimen/text90"
+                android:layout_height="@dimen/text90"
+                android:layout_gravity="center"
+                android:src="@drawable/tabbar_mine"
+                android:visibility="visible" />
+
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,1 @@
+include ':app', ':andBase', ':greendaolibrary', ':imagepicker'

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="placeholder_color_background">#E3E3E3</color>
+    <color name="text_color_title">#333333</color>
+    <color name="text_color_dialog">#666666</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="grey_backgroud">#efeff4</color>
+    <color name="tabbar_backgroud">#AAAAAA</color>
+    <color name="text_color_black">#000000</color>
+    <color name="color_cutting_line">#f2f2f2</color>
+    <color name="refresh_dialog_bg">#AA000000</color>
+    <!-- 基本分割线颜色 -->
+    <color name="text_grey_line">#d9d9d9</color>
+    <color name="background">#EAEAEA</color>
+    <color name="bt_commit">#A4C639</color>
+    <color name="color_price">#FFD700</color>
+    <color name="address_list_divider">#aeaeae</color>
+    <color name="address_list_background">#e4e4e4</color>
+    <color name="address_list_color">#555555</color>
+    <color name="pop_province_title_color">#3b3b3b</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorslightwhite">#66FFFFFF</color>
+    <color name="colorgray">#AAAAAA</color>
+    <!--<color name="floating_button">#4584EC</color>-->
+    <color name="floating_button">#555555</color>
+    <color name="btn_commit">#75A6FF</color>
+    <color name="price_color">#FF6633</color>
+    <color name="price_color2">#FF4433</color>
+    <color name="color_snow_white">#FFF5EE</color>
+    <!--<color name="color_dialog_choos_type">#2B81DF</color>-->
+    <color name="color_dialog_choos_type">#555555</color>
+    <color name="material_indigo_500">#3F51B5</color>
+    <color name="material_indigo_600">#3949AB</color>
+    <color name="material_teal_a400">#1DE9B6</color>
+    <color name="material_red_400">#EF5350</color>
+</resources>

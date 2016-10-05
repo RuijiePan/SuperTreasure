@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.supertreasure.main.ActivityMine"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    >
+
+    <include layout="@layout/activity_titlt_back"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/nullcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="60px"
+        android:gravity="center"
+        android:text="没有数据内容"/>
+</LinearLayout>

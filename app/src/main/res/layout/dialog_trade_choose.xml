@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:alpha="0.5"
+    android:id="@+id/root"
+    >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text75">
+        <!--<TextView
+            android:textSize="@dimen/text30"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:id="@+id/tv_coupon"
+            android:gravity="center"
+            android:text="@string/tv_coupon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />-->
+        <TextView
+            android:background="@drawable/dialog_button_selector"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text30"
+            android:id="@+id/tv_decorate"
+            android:text="@string/tv_decorate"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:background="@drawable/dialog_button_selector"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text30"
+            android:id="@+id/tv_ele_product"
+            android:text="@string/tv_ele_product"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:background="@drawable/dialog_button_selector"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text30"
+            android:id="@+id/tv_other"
+            android:text="@string/tv_other"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

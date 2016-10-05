@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336358254 -->
+<screen>
+    <_content layout="@layout/public_goods" >
+        <!-- Error creating screen file for file public_goods.xml:
+        start tag unexpected character 1 (position: TEXT seen ...\u5e2e\u7d1d\u7490\ue15d\u62f1\u93c3\u5815\u68ff\u95ae\u82a5\u6e41\u9354\u2540\u7c2c\u935a\u7a3f\u7d29\u93c7\u6751\ue64b\u6d5c\u54c4\u53e7\u5a09\u3125\u645d\u951b\ufffd\r\n                android:maxLength="1... @38:37)  -->
+    </_content>
+</screen>

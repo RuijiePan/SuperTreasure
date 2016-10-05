@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.supertreasure">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
+    <!-- 从sdcard中读取数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".main.TheApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        tools:replace="android:icon, android:theme"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".main.AutoLayoutActivity"
+            android:launchMode="singleTop"
+            android:label="@string/autolayout_activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_logo"
+            android:name=".main.SplashActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".login.ActivityLogin"
+            android:launchMode="singleTop"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".main.ActivityHome"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".main.ActivityCoupon"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_coupon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".coupon.ActivityCouponHistory"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_coupon"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".main.ActivityTrade"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_activity_trade"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".main.ActivityContact"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_activity_contact"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".main.ActivityMine"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_activity_mine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:name=".login.ActivityForgetPwd"
+            android:label="@string/activity_forget_password"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:name=".login.ActivityConfirmPwd"
+            android:label="@string/activity_confirm_pwd"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTop"
+            android:name=".login.ActivityRegister"
+            android:label="@string/title_activity_activity_register"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityOutSchool"
+            android:launchMode="singleTop"
+
+            android:label="@string/title_activity_activity_outschool_main"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.OutSchoolHead"
+            android:launchMode="singleTop"
+
+            android:label="@string/title_activity_activity_outschool_head"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ImagePagerActivity"
+            android:label="@string/activity_image_page"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.OutSchoolFriend"
+            android:launchMode="singleTop"
+
+            android:label="@string/title_activity_activity_outschool_friend"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityMoodInDeatil"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_mood_in_detail"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityMoodInPut"
+            android:launchMode="singleTop"
+
+            android:label="@string/acitivity_mood_in_put"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityChoosePic"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_choose_pic"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityPhoto"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_photo"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ImageGridActivity"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_image_grid"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".coupon.ActivityCouponDetail"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_coupon_detail"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".trade.ActivityGoodDetail"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_good_detail"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".trade.ActivityMarketInPut"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_market_input"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".util.SlideBackActivity"
+            android:label="@string/acitivity_slide_back"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityMyCoupon"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityMoneyDetail"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityMyShop"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityPersonData"
+            android:launchMode="singleTop"
+            android:label="@string/activity_persondata"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityMyCollection"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivitySetting"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityEditSignature"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+
+        <activity
+
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityEditNickname"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+
+        <activity
+
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityEditSelfdom"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityEditHobby"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityEditPassword"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityNewsDetail"
+            android:launchMode="singleTop"
+            android:label="@string/acitivity_news_detail"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack" />
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityMyCouponDetial"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".trade.ActivityMyselfGoodDetail"
+            android:launchMode="singleTop"
+            android:label="@string/activity_myself_good_detail"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".trade.ActivityHisStore"
+            android:launchMode="singleTop"
+            android:label="@string/activity_his_store"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityNewsHistory"
+            android:launchMode="singleTop"
+            android:label="@string/activity_news_history"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityMoodMessage"
+            android:label="@string/activity_news_history"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".home.ActivityAdvertisementDetail"
+            android:label="@string/activity_news_history"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityMyMood"
+            android:launchMode="singleTop"
+            android:label="@string/activity_my_mood"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".mine.ActivityPay"
+            android:launchMode="singleTop"
+            android:label="@string/activity_pay"
+            android:theme="@style/AppTheme.NoActionBarSwiperBack"/>
+        <service android:name=".websocketservice.WebSocketService"/>
+        <service android:name=".service.AppUpdateService"/>
+    </application>
+</manifest>

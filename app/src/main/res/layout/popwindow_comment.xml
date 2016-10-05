@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/popwindow_comment_height"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.supertreasure.main.ActivityMine"
+    android:orientation="vertical"
+    android:background="@color/text_color_white"
+    android:id="@+id/root"
+    >
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:gravity="top"
+        android:hint="请在这输入您的评论"
+        android:background="@drawable/bg_edittext_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popwindow_edittext_height" />
+
+    <Button
+        android:layout_marginTop="@dimen/text7"
+        android:background="@drawable/btn_commit"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text30"
+        android:id="@+id/bt_commit"
+        android:text="@string/bt_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text60" />
+
+</LinearLayout>

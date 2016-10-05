@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:gravity="center"
+        android:text="@string/recyclerview_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text60" />
+ <!--   <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/draweeView"
+        app:failureImage="@drawable/icon_failure"
+        app:retryImage="@drawable/icon_retry"
+        app:placeholderImage="@drawable/image_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text90" />-->
+</LinearLayout>

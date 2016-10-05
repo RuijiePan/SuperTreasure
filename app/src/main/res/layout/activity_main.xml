@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:id="@+id/tabhost"
+    tools:context=".main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/re_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text90"
+            android:layout_alignParentBottom="true" >
+
+            <View style="@style/cutting_line" android:layout_above="@+id/tab"/>
+
+            <include
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout = "@layout/main_bar" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</TabHost>

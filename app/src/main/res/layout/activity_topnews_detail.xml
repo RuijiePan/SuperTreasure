@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/activity_news_titlt_back"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text5"
+        android:progressDrawable="@drawable/progress_bar_states"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text90"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_browse"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_browse"
+                android:background="@drawable/browse"
+                android:layout_width="@dimen/text60"
+                android:layout_height="@dimen/text60" />
+
+            <TextView
+                android:id="@+id/tv_browse"
+                android:text="10086"
+                android:paddingLeft="@dimen/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_like"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text90">
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:background="@drawable/like_press"
+                android:layout_width="@dimen/text45"
+                android:layout_height="@dimen/text45" />
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:text="10086"
+                android:paddingLeft="@dimen/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

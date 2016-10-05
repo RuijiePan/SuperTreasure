@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336358238 -->
+<screen>
+    <_content layout="@layout/popwindow_comment" >
+        <!-- Error creating screen file for file popwindow_comment.xml:
+        start tag unexpected character @ (position: TEXT seen ...       android:hint="\u7487\u5cf0\u6e6a\u6769\u6b12\u7ded\u934f\u30e6\u504d\u9428\u52ee\u760e\u7481\ufffd\r\n        android:background="@... @18:30)  -->
+    </_content>
+</screen>

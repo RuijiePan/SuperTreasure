@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_backgroud"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.supertreasure.main.ActivityMine">
+
+    <com.supertreasure.util.CustomToolBar
+        android:id="@+id/toolbar"
+        android:background="@color/text_color_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </com.supertreasure.util.CustomToolBar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/split_line_mine" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey_backgroud" />
+
+            <RelativeLayout
+                android:id="@+id/head_viewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/headImgbar_mine"
+                android:background="@drawable/buttonselector">
+
+                <LinearLayout
+                    android:id="@+id/iv_mine"
+                    android:layout_width="@dimen/headImgbar_mine"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/tv_mine"
+                        app:roundedCornerRadius="@dimen/corner_headview"
+                        app:placeholderImage="@drawable/ic_girl"
+                        app:failureImage="@drawable/icon_failure"
+                        android:layout_width="@dimen/headImg_mine"
+                        android:layout_height="@dimen/headImg_mine"
+                         />
+                </LinearLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/iv_mine"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10px"
+                        android:orientation="vertical">
+                        <TextView
+
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:id="@+id/tv_mine_nickname"
+                            android:layout_width="350px"
+                            android:layout_height="wrap_content"
+                            android:maxLength="9"
+                            android:text="小妹"
+                            android:textSize="@dimen/headImgbar_mine_headtextname" />
+
+                        <TextView
+                            android:paddingTop="10px"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:maxLength="30"
+                            android:id="@+id/tv_mine_sign_content"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.5"
+                            android:hint="请编辑你的个性签名请编辑你的个性签名请编辑你的个性签名"
+                            android:textSize="@dimen/headImgbar_mine_headtextsign" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/text20"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/headImgbar_mine_next"
+                            android:layout_height="@dimen/headImgbar_mine_next"
+                            android:alpha="@string/alpha_next"
+                            android:src="@drawable/boult" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/split_line_mine" />
+
+            <LinearLayout
+                android:id="@+id/btn_mine_myTreasure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonselector"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/text57"
+                        android:layout_marginRight="@dimen/text3"
+                        android:background="@drawable/ic_mine_money"
+                        android:layout_width="@dimen/text40"
+                        android:layout_height="@dimen/text40" />
+                    <TextView
+                        android:id="@+id/tv_mytreasure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:text="@string/tx_activity_mine_treasure"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <TextView
+                        android:textColor="@color/red_btn_bg_color"
+                        android:id="@+id/tv_mymoney"
+                        android:layout_width="0dp"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text55"
+                        android:layout_weight="1"
+                        android:text="22"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="@dimen/text20"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+                </LinearLayout>
+
+                <View style="@style/cutting_grey_line_left_40px" />
+
+                <LinearLayout
+                    android:id="@+id/btn_mine_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/text55"
+                        android:layout_marginRight="@dimen/text5"
+                        android:background="@drawable/icon_pay"
+                        android:layout_width="@dimen/text40"
+                        android:layout_height="@dimen/text40" />
+
+                    <TextView
+                        android:id="@+id/tv_pay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:layout_weight="1"
+                        android:text="@string/contribution"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="@dimen/text20"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/split_line_mine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btn_mine_mySaySay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/text55"
+                        android:background="@drawable/ic_mine_mood"
+                        android:layout_width="@dimen/text45"
+                        android:layout_height="@dimen/text45" />
+
+                    <TextView
+                        android:id="@+id/tv_mysaysay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:layout_weight="1"
+                        android:text="@string/tx_activity_mine_shuoshuo"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="@dimen/text20"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+                </LinearLayout>
+
+                <View style="@style/cutting_grey_line_left_40px" />
+
+                <LinearLayout
+                    android:id="@+id/btn_mine_myShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/text57"
+                        android:layout_marginRight="@dimen/text3"
+                        android:background="@drawable/ic_mine_shop"
+                        android:layout_width="@dimen/text40"
+                        android:layout_height="@dimen/text40" />
+
+                    <TextView
+                        android:id="@+id/tv_mystore"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:layout_weight="1"
+                        android:text="@string/tx_activity_mine_myshop"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="@dimen/text20"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+                </LinearLayout>
+
+                <View style="@style/cutting_grey_line_left_40px" />
+
+                <LinearLayout
+                    android:id="@+id/btn_mine_myCollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/text55"
+                        android:background="@drawable/ic_mine_collect"
+                        android:layout_width="@dimen/text45"
+                        android:layout_height="@dimen/text45" />
+
+                    <TextView
+                        android:id="@+id/tv_mycollection"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:layout_weight="1"
+                        android:text="@string/tx_activity_mine_collection"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="@dimen/text20"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+                </LinearLayout>
+
+                <View style="@style/cutting_grey_line_left_40px" />
+
+                <LinearLayout
+                    android:id="@+id/btn_mine_myCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/text60"
+                        android:layout_marginRight="@dimen/text5"
+                        android:background="@drawable/ic_mine_coupon"
+                        android:layout_width="@dimen/text35"
+                        android:layout_height="@dimen/text35" />
+
+                    <TextView
+                        android:id="@+id/tv_mycunpon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:layout_weight="1"
+                        android:text="@string/tx_activity_mine_coupon"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="@dimen/text20"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line_mine" />
+
+            <LinearLayout
+                android:id="@+id/btn_mine_mySetting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:background="@drawable/buttonselector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/text60"
+                    android:layout_marginRight="@dimen/text5"
+                    android:background="@drawable/ic_mine_setting"
+                    android:layout_width="@dimen/text35"
+                    android:layout_height="@dimen/text35" />
+
+                <TextView
+                    android:id="@+id/tv_mySetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_weight="1"
+                    android:text="@string/tx_activity_mine_setting"
+                    android:textSize="@dimen/normalbar_mine_textsize" />
+
+                <ImageView
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:layout_marginRight="@dimen/text20"
+                    android:alpha="@string/alpha_next"
+                    android:src="@drawable/boult" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

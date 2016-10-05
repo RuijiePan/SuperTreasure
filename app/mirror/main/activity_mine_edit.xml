@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336357607 -->
+<screen>
+    <_content layout="@layout/activity_mine_edit" >
+        <!-- Error creating screen file for file activity_mine_edit.xml:
+        markup not allowed inside attribute value - illegal <  (position: TEXT seen ...xt3"\r\n                    android:text="\u93b5\u64b6\ue1e3\u941e\ufffd/>\r\n                <... @297:18)  -->
+    </_content>
+</screen>

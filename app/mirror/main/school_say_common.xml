@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336358306 -->
+<screen>
+    <_content layout="@layout/school_say_common" >
+        <!-- Error creating screen file for file school_say_common.xml:
+        markup not allowed inside attribute value - illegal <  (position: TEXT seen ...@dimen/text35"\r\n                android:text="1\u6d93\ufffd/>\r\n            <... @44:14)  -->
+    </_content>
+</screen>

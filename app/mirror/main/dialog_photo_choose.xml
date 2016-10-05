@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336357766 -->
+<screen>
+    <_content layout="@layout/dialog_photo_choose" >
+        <!-- Error creating screen file for file dialog_photo_choose.xml:
+        start tag unexpected character # (position: TEXT seen ..."10dip"\r\n        android:text="\u9413\u445\u6d49\u93c8\ufffd\r\n        android:textColor="#... @20:29)  -->
+    </_content>
+</screen>

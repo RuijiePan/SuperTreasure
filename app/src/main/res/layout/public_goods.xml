@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/activity_titlt_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_marginBottom="@dimen/text30"
+                android:layout_marginLeft="@dimen/text30"
+                android:layout_marginTop="@dimen/text30"
+                android:background="@drawable/ic_launcher" />
+            <include layout="@layout/split_line_black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text45"
+                android:background="#44E0FFFF" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:layout_marginLeft="@dimen/text30"
+                android:layout_marginRight="@dimen/text30"
+                android:layout_marginTop="@dimen/text30"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="详细描述几成新，购买时间都有助于吸引更多人关注哦！"
+                android:maxLength="140" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="@dimen/text30"
+                android:text="140X" />
+            <include layout="@layout/split_line_black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text45"
+                android:background="#44E0FFFF" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:layout_marginLeft="@dimen/text30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/text130"
+                    android:layout_height="wrap_content"
+                    android:text="想买"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text35" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/text15"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="￥0.00"
+                    android:textSize="@dimen/text30" />
+            </LinearLayout>
+            <include layout="@layout/split_line_black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:layout_marginLeft="@dimen/text30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/text130"
+                    android:layout_height="wrap_content"
+                    android:text="原价"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text35" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/text15"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="￥0.00"
+                    android:textSize="@dimen/text30" />
+            </LinearLayout>
+            <include layout="@layout/split_line_black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text45"
+                android:background="#44E0FFFF"
+                android:text="联系方式"
+                android:textColor="#A2B5CD"
+                android:paddingLeft="@dimen/text30"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:layout_marginLeft="@dimen/text30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/text130"
+                    android:layout_height="wrap_content"
+                    android:text="联系人"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text35" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/text15"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="@dimen/text30" />
+            </LinearLayout>
+            <include layout="@layout/split_line_black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:layout_marginLeft="@dimen/text30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/text130"
+                    android:layout_height="wrap_content"
+                    android:text="手机"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text35" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/text15"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="@dimen/text30" />
+            </LinearLayout>
+            <include layout="@layout/split_line_black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:layout_marginLeft="@dimen/text30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/text130"
+                    android:layout_height="wrap_content"
+                    android:text="类型"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text35" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/text15"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="@dimen/text30" />
+            </LinearLayout>
+            <include layout="@layout/split_line_black" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

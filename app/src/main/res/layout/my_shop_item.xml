@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:layout_marginLeft="@dimen/text30"
+    android:layout_marginRight="@dimen/text30"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/colorwhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充电宝"
+            android:textColor="@color/text_color_black"
+            android:layout_marginLeft="@dimen/text30"
+            android:textSize="@dimen/text30"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥50"
+            android:layout_marginLeft="@dimen/text30"
+            android:textColor="#3A5FCD"
+            android:textSize="@dimen/text30"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitXY"/>
+    
+</LinearLayout>

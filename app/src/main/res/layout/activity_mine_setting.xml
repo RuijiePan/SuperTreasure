@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_backgroud"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height">
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="@color/text_color_title"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text45"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/btn_return"
+            android:layout_width="@dimen/headImgbar_mine_return_width"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/headImgbar_mine_return"
+                android:layout_height="@dimen/headImgbar_mine_return"
+                android:src="@drawable/navigationbar_back"
+                />
+        </LinearLayout>
+    </FrameLayout>-->
+
+    <include layout="@layout/activity_titlt_back" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/split_line_mine" />
+
+            <LinearLayout
+
+                android:id="@+id/btn_mine_changpassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:background="@drawable/buttonselector"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/changPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/text60"
+                        android:layout_marginRight="@dimen/text7"
+                        android:background="@drawable/ic_setting_change_pwd"
+                        android:layout_width="@dimen/text33"
+                        android:layout_height="@dimen/text33" />
+                    <TextView
+                        android:id="@+id/tv_mytreasure"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:text="@string/tx_activity_mine_changPassword"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_marginRight="@dimen/text20"
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line_mine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btn_mine_clearCache"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:background="@drawable/buttonselector"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/text58"
+                        android:layout_marginRight="@dimen/text7"
+                        android:background="@drawable/ic_setting_clear"
+                        android:layout_width="@dimen/text35"
+                        android:layout_height="@dimen/text35" />
+
+                    <TextView
+                        android:id="@+id/tv_mystore"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:text="@string/tx_activity_mine_clearCache"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_clearcache_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20px"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:id="@+id/clearcache_next"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="20px"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+
+                </LinearLayout>
+
+                <View style="@style/cutting_grey_line_left_40px"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/text_color_white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:id="@+id/mine_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text90"
+                        android:background="@drawable/buttonselector"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/text63"
+                            android:layout_marginRight="@dimen/text7"
+                            android:background="@drawable/ic_setting_update"
+                            android:layout_width="@dimen/text30"
+                            android:layout_height="@dimen/text30" />
+
+                        <TextView
+                            android:id="@+id/tv_update"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/text30"
+                            android:text="@string/tx_activity_mine_update"
+                            android:textSize="@dimen/normalbar_mine_textsize" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/headImgbar_mine_next"
+                            android:layout_height="@dimen/headImgbar_mine_next"
+                            android:layout_marginRight="20px"
+                            android:alpha="@string/alpha_next"
+                            android:src="@drawable/boult" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/split_line_mine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mine_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text90"
+                    android:background="@drawable/buttonselector"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/text60"
+                        android:layout_marginRight="@dimen/text5"
+                        android:background="@drawable/ic_setting_help"
+                        android:layout_width="@dimen/text35"
+                        android:layout_height="@dimen/text35" />
+
+                    <TextView
+                        android:id="@+id/tv_help"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/text30"
+                        android:text="@string/tx_activity_mine_help"
+                        android:textSize="@dimen/normalbar_mine_textsize" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/headImgbar_mine_next"
+                        android:layout_height="@dimen/headImgbar_mine_next"
+                        android:layout_marginRight="20px"
+                        android:alpha="@string/alpha_next"
+                        android:src="@drawable/boult" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <LinearLayout
+                android:id="@+id/btn_mine_tips"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:background="@drawable/buttonselector"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/text60"
+                    android:layout_marginRight="@dimen/text5"
+                    android:background="@drawable/ic_setting_message"
+                    android:layout_width="@dimen/text35"
+                    android:layout_height="@dimen/text35" />
+
+                <TextView
+                    android:id="@+id/tv_tips"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:text="@string/tx_activity_mine_tips"
+                    android:textSize="@dimen/normalbar_mine_textsize" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:layout_marginRight="20px"
+                    android:alpha="@string/alpha_next"
+                    android:src="@drawable/boult" />
+
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <include layout="@layout/split_line_mine" />
+
+
+            <RelativeLayout
+                android:id="@+id/btn_mine_quit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:background="@drawable/buttonselector"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_myquit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/tx_activity_mine_quit"
+                    android:textSize="@dimen/normalbar_mine_textsize" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

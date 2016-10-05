@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_titlt_back"/>
+
+    <com.supertreasure.util.ReboundScrollView
+        android:scrollbars="none"
+        android:id="@+id/scrollView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/draweeView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                fresco:failureImage="@drawable/icon_failure"
+                fresco:retryImage="@drawable/icon_retry"
+                fresco:placeholderImage="@drawable/image_placeholder_coupon"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="@dimen/text30"
+                android:layout_marginBottom="@dimen/text30"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text30"
+                android:layout_marginRight="@dimen/text30"
+                android:textSize="@dimen/text22"
+                android:text="@string/coupon_statement"/>
+
+        </LinearLayout>
+    </com.supertreasure.util.ReboundScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text90"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_browse"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_browse"
+                android:background="@drawable/browse"
+                android:layout_width="@dimen/text60"
+                android:layout_height="@dimen/text60" />
+
+            <TextView
+                android:id="@+id/tv_browse"
+                android:text="10086"
+                android:paddingLeft="@dimen/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_like"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text90">
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:background="@drawable/like_normal"
+                android:layout_width="@dimen/text45"
+                android:layout_height="@dimen/text45" />
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:text="10086"
+                android:paddingLeft="@dimen/text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/ll_collect"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_collect"
+                android:layout_width="@dimen/text50"
+                android:layout_height="@dimen/text50"
+                android:gravity="center|center_vertical"
+                android:background="@drawable/ic_collect"
+                />
+            <TextView
+                android:layout_marginRight="15px"
+                android:id="@+id/tv_hadcollect"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/price_color"
+                android:textColor="@color/colorwhite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="收藏"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

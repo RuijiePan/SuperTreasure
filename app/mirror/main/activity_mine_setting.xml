@@ -1,0 +1,24 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336357614 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/activity_mine_setting">
+        <!-- TextView Examples:
+        <tv_mytreasure text="@string/string_resource" />
+        <tv_mytreasure text="Text literal" textSize="14sp" /> -->
+        <tv_mytreasure />
+        <tv_mystore />
+        <!-- ImageView Examples:
+        <clearcache_next src="@drawable/image_resource" />
+        <clearcache_next src="relative_path/image.jpg" /> -->
+        <clearcache_next />
+        <tv_clearcache_content />
+        <tv_tips />
+        <tv_help />
+        <tv_aboutMe />
+        <tv_myquit />
+    </_content>
+</screen>

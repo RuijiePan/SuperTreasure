@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_backgroud"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar_title" />
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/cardcorner"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:layout_margin="@dimen/text30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_margin="@dimen/text15"
+            android:textSize="@dimen/text30"
+            android:text="@string/slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cardcorner"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:layout_marginRight="@dimen/text45"
+            android:layout_width="@dimen/pay_image_height"
+            android:layout_height="@dimen/pay_image_height" >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/draweeView_alipay"
+                app:roundedCornerRadius="@dimen/cardcorner"
+                app:placeholderImage="@drawable/alipay"
+                app:failureImage="@drawable/icon_failure"
+                android:layout_width="@dimen/pay_image_height"
+                android:layout_height="@dimen/pay_image_height" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cardcorner"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:layout_width="@dimen/pay_image_height"
+            android:layout_height="@dimen/pay_image_height" >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/draweeView_wechatpay"
+                app:roundedCornerRadius="@dimen/cardcorner"
+                app:placeholderImage="@drawable/wechatpay"
+                app:failureImage="@drawable/icon_failure"
+                android:layout_width="@dimen/pay_image_height"
+                android:layout_height="@dimen/pay_image_height" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

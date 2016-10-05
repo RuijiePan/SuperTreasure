@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336357711 -->
+<screen>
+    <_content layout="@layout/coupon_detail_mine" >
+        <!-- Error creating screen file for file coupon_detail_mine.xml:
+        expected = after attribute name (position: TEXT seen ...="\u5bb8\u53c9\u6579\u9498\u5fd5\u6b91\u6d7c\u6a3b\u512c\u9357\u75af\ue1db\u93af\ufffd\r\n            android:layout_centerVertical="true"... @47:49)  -->
+    </_content>
+</screen>

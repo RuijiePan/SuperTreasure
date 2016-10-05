@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ToolBarTitleText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dimen_dp_16" />
+
+    <TextView
+        android:id="@+id/tv_center"
+        style="@style/ToolBarTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_left_right"
+        android:textSize="@dimen/txt_s"
+        style="@style/ToolBarTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_right"
+        android:layout_marginRight="@dimen/dimen_dp_16" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        style="@style/ToolBarTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_dp_16" />
+</RelativeLayout>

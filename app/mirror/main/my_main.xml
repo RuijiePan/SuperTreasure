@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336358190 -->
+<screen>
+    <_content layout="@layout/my_main" >
+        <!-- Error creating screen file for file my_main.xml:
+        start tag unexpected character @ (position: TEXT seen ...           android:text="\u93b4\u6220\u6b91\u6d7c\u6a3b\u512c\u9352\ufffd\r\n            android:textSize="@... @91:32)  -->
+    </_content>
+</screen>

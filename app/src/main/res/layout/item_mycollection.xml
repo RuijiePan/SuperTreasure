@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_collection_height"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="@dimen/corner_headview"
+        android:layout_marginRight="@dimen/corner_headview"
+        app:cardElevation="@dimen/cardcorner"
+        app:cardCornerRadius="@dimen/cardcorner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="10px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/goods_img"
+                app:placeholderImage="@drawable/image_placeholder_trade"
+                app:failureImage="@drawable/icon_failure"
+                app:roundedCornerRadius="@dimen/corner_headview"
+                android:layout_width="@dimen/item_collection_width"
+                android:layout_height="@dimen/item_collection_width" />
+            <TextView
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text30"
+                android:textColor="@color/color_price"
+                android:layout_alignLeft="@+id/goods_content"
+                android:layout_below="@id/goods_content"
+                android:text="￥"/>
+            <TextView
+                android:layout_marginBottom="5px"
+                android:id="@+id/goods_content"
+                android:layout_toRightOf="@id/goods_img"
+                android:layout_marginLeft="20px"
+                android:layout_width="400px"
+                android:layout_marginTop="@dimen/text20"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text30"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="充电宝"/>
+
+            <TextView
+                android:id="@+id/goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200元"
+                android:textSize="@dimen/text30"
+                android:gravity="center"
+                android:textColor="@color/red_btn_bg_pressed_color"
+                android:layout_below="@+id/goods_content"
+                android:layout_toRightOf="@+id/sign"
+                android:layout_toEndOf="@+id/sign" />
+            <RelativeLayout
+                android:layout_toRightOf="@id/goods_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical">
+
+                <ImageView
+                    android:alpha="0.5"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/corner_headview"/>
+
+</LinearLayout>

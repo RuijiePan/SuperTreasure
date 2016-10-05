@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<shape
+	   xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:shape="rectangle"
+	    >
+	    <!-- 填充颜色 -->
+	    <solid  android:color="@color/text_color_title"/>
+	<padding android:top="@dimen/text7" android:bottom="@dimen/text7" android:left="@dimen/text45" android:right="@dimen/text45"/>
+	  <stroke
+		android:width="2px"
+		android:color="@color/text_color_white"
+		/>
+	 <corners android:topLeftRadius="5px" android:bottomLeftRadius="5px"/>
+		<!-- android:color="#F8720D" -->
+	    
+	</shape>

@@ -1,0 +1,253 @@
+package com.supertreasure.util;
+
+import android.os.Environment;
+
+/**
+ * Created by Administrator on 2016/1/23.
+ */
+public class Config {
+
+    public static final String IMAGE_PIC_CACHE_DIR = Environment.getExternalStorageDirectory().getAbsoluteFile()+"/SuperTreasure/cacheImage";
+    public static final String APPKEY ="11d13c73623b1";
+    public static final String APPSECRET = "c8f8f0fe55227e20abbe2457de96962b";
+    public static final String UnLoginError = "not_login";
+    public static final String InputError = "error_input";
+    public static final String Error_Type = "error_type";
+
+    public static final String IsFirstLogin = "isFirstLogin";
+    public static final String IsAutoLogin  = "isAutoLogin";//自动登进，还是手动登进
+    public static final String IsOtherLogin = "isOtherLogin";
+    public static final String IsShowHistory = "isShowHistory";
+    public static final String IsInMoodInput = "isInMoodInput";
+    public static final String Exit = "exit";
+    public static final String Life = "life";
+    public static final String Elect = "elect";
+    public static final String Other = "other";
+    public static final String Boy = "男";
+    public static final String Girl = "女";
+    public static final String APIUploadMoodPicture = "/api/upload/mood_imgs";
+    public static final String PullToRefreshTime = "2099-01-24 12:50:43";
+    public static final int AlphaLight = 204;
+    public static final int AlphaBlack = 102;
+    public static final int AutoLoadingNum = 3;
+    public static final int REQUEST_CODE = 10086;
+    public static final int RESULT_CODE = 10086;
+    public static final int RowNumber = 10 ;
+    public static final int MarketRowNumber = 5;
+    public static final int MyShopRowNumber = 20;
+    public static final int PhoneLength = 11;
+    public static final int CodeLengh = 4;
+    public static final int MinPwdLenght = 6;
+    public static final int AdFirst = 0;
+    public static final int AdSecond = 1;
+    public static final int AdThird = 2;
+    public static final int NewIn = 1;
+    public static final int NewOut = 2;
+    public static final int OutSchool = 3;
+    public static final int GoodSelf = 4;
+    public static final int Good = 5;
+    public static final String URL = "url";
+    public static final String AdminID = "adminID";
+    public static final String OldPassword = "oldpwd";
+    public static final String UserName = "userName";
+    public static final String UserPic = "userPic";
+    public static final String NickName = "nickName";
+    public static final String Love = "love";
+    public static final String Selfdom = "selfdom";
+    public static final String Hobby = "hobby";
+    public static final String Sex = "sex";
+    public static final String BelongSchool = "belongSchool";
+    public static final String NewsIn = "newsIn";
+    public static final String In = "in";
+    public static final String Out = "out";
+    public static final String NewsOut = "newsOut";
+    public static final String Sign = "sign";
+    public static final String SerialNum = "serialnum";
+    public static final String SafetyCode = "safetyCode";
+    public static final String ChangeKey = "changekey";
+    public static final String ChangePwd = "changepwd";
+    public static final String Password = "password";
+    public static final String TopNewsPage = "topNewsPage";
+    public static final String OutTopNewsPage = "OuttopNewsPage";
+    public static final String SchoolInPage = "schoolInPage";
+    public static final String SchoolOutPage = "schoolOutPage";
+    public static final String CouponPage = "couponPage";
+    public static final String MyMoodPage = "myMoodPage";
+    public static final String MyMoodDetailPage = "myMoodDetailPage";
+    public static final String DecoratePage = "decoratePage";
+    public static final String MyShopSoldPage = "myshopSoldPage";
+    public static final String MyShopPublishPage = "myshopPublishPage";
+    public static final String HisShopPublishPage = "hisShopPublishPage";
+    public static final String NewsHistoryPage = "newsHistoryPage";
+    public static final String CouponHistoryPage = "CouponHistoryPage";
+    public static final String MyShopRemovePage = "myshopRemovePage";
+    public static final String EleProductPage = "eleProductPage";
+    public static final String OtherPage = "otherPage";
+    public static final String MoodInDeatailPage = "moodInDetailPage";
+    public static final String ShowStore = "showStore";
+    public static final String SoldOrRemove = "soldOrRemove";
+    public static final String Position= "position";
+    public static final String Mood = "mood";
+    public static final String Market = "market";
+    public static final String Page = "page";
+    public static final String ShopID = "shopID";
+    public static final String Type = "type";
+    public static final String Rows = "rows";
+    public static final String Token = "token";
+    public static final String Status = "status";
+    public static final String UserID = "userID";
+    public static final String TopID = "topID";
+    public static final String MoodID = "moodID";
+    public static final String SellID = "sellID";
+    public static final String CouponID = "couponID";
+    public static final String Width = "width";
+    public static final String Height = "height";
+    public static final String Introduction = "introduction";
+    public static final String Price = "price";
+    public static final String Paths = "paths";
+    public static final String Linker = "linker";
+    public static final String TelePhone = "telePhone";
+    public static final String Cost = "cost";
+    public static final String CommentText = "commentText";
+    public static final String ToCommentID = "toCommentID";
+    public static final String TopNewsTime = "topNewsTime";
+    public static final String TopNewsBrowse = "topNewsBrowse";
+    public static final String TopNewsPrise = "topNewsPrise";
+    public static final String TopNewsIsPrise = "topNewsIsPrise";
+    public static final String OutTopNewsTime = "outTopNewsTime";
+    public static final String MoodInDeatailTime = "moodInDetailTime";
+    public static final String SchoolInTime = "schoolInTime";
+    public static final String SchoolOutTime = "schoolOutTime";
+    public static final String CouponTime = "couponTime";
+    public static final String DecorateTime = "decorateTime";
+    public static final String EleProductTime = "eleProductTime";
+    public static final String OtherTime = "otherTime";
+    public static final String BeginTime = "beginTime";
+    public static final String FlushTime = "flushTime";
+
+    public static final String API = "http://112.74.54.18/data";
+    public static final String CHATAPI = "http://112.74.54.18:8080/chat";
+    public static final String SUCCESS = "success";
+    public static final String ERROR = "error";
+    public static final String VERSION = "version";
+    public static final String DOWNLOADURL = "downloadUrl";
+    public static final String ISFORCE= "isUpdate";
+    public static final String APIVERSION = "/api/index/check_version";
+    public static final String UserLogin = "/api/index/user_login";
+    public static final String UserRegister = "/api/index/user_register";
+    public static final String Banner = "/api/ad/showads";
+    public static final String TopNews = "/api/logined/getnews";
+    public static final String IsPraise = "/api/logined/is_praised";
+    public static final String APIMyMoodDetail= "/api/me/mood_details";
+    public static final String APIMyMood = "/api/me/mymood";
+    public static final String APIGetKey = "/api/index/getkey";
+    public static final String APIChangePwd = "/api/index/changepwd";
+    public static final String APIMoodIsPraise = "/api/mood/is_praised";
+    public static final String APIMoodPutIn = "/api/mood/put_in";
+    public static final String APIUserpicturePutIn = "/api/upload/user_pic";
+    public static final String APIMoodPutOut = "/api/mood/put_out";
+    public static final String Praise = "/api/logined/praise";
+    public static final String APIMoodPraise = "/api/mood/praise";
+    public static final String NowTime = "/api/index/nowtime";
+    public static final String APIMoodIn = "/api/mood/show_in";
+    public static final String APIMoodOut = "/api/mood/show_out";
+    public static final String APIMoodInComments = "/api/mood/show_comments";
+    public static final String APIMoodToComment = "/api/mood/comment";
+    public static final String APIShowCoupon = "/api/coupon/show";
+    public static final String APIPubishCoupon = "/api/coupon/publish";
+    public static final String APICollectCoupon = "/api/coupon/want";
+    public static final String APIUploadCouponImg = "/api/upload/coupon_img";
+    public static final String APICouponPraise = "/api/coupon/praise";
+    public static final String APIBrowserCoupon = "/api/coupon/browser";
+    public static final String APIUploadCoupon = "/api/upload/coupon_img";
+    public static final String APIAddGood = "/api/market/addgood";
+    public static final String APIUploadGoodImg = "/api/upload/good_img";
+    public static final String APIMarketStore = "/api/market/store";
+    public static final String APINewsHistory = "/api/logined/history";
+    public static final String APICouponHistory = "/api/coupon/history";
+    public static final String APIOwnGood = "/api/market/owngood";
+    public static final String APIAllGood = "/api/market/allgood";
+    public static final String APIGoodDetail = "/api/market/details";
+    public static final String APIRemoveGood = "/api/market/removegood";
+    public static final String APISoldOutGood = "/api/market/soldout";
+    public static final String APIPraiseGood = "/api/market/praise";
+    public static final String APIWantGood = "/api/market/want";
+    public static final String APITopNewsBrowser = "/api/logined/browser";
+    public static final String APIMyCollection = "/api/me/mycollect";
+    public static final String APIAboutMe = "/api/me/aboutme";
+    public static final String APIMycoupon = "/api/me/mycoupon";
+    public static final String APIEditNickName = "/api/me/editname";
+    public static final String APIEditChangHeadImg = "/api/me/edithead";
+    public static final String APIEditSign = "/api/me/editsign";
+    public static final String APIEditSelfdom = "/api/me/editselfdom";
+    public static final String APIEditHobby = "/api/me/edithobby";
+    public static final String APIEditSex = "/api/me/editsex";
+    public static final String APIEditBelongSchool = "/api/me/editschool";
+    public static final String APIEditLove = "/api/me/editlove";
+    public static final String APIClickMe = "/api/me/clickme";
+    public static final String APIModifyPassword = "/api/me/modify";
+    public static final String APIQuit = "/api/logined/user_exit";
+    public static final String APIMyOwnGoods = "/api/market/owngood";
+    public static final String APIExchangeMoney = "/api/serial/exchange";
+
+    public static final String Content_Mine_money = "Content_mine_money";
+    public static final String Content_AboutMe_Hobby = "Content_AboutMe_Hobby";
+    public static final String Content_AboutMe_Personality = "Content_AboutMe_Personality";
+    public static final String Content_AboutMe_CurrentAccount = "Content_AboutMe_CurrentAccount";
+    public static final String Content_AboutMe_Belongschool = "Content_AboutMe_Belongschool";
+    public static final String Content_AboutMe_Sex = "Content_AboutMe_Sex";
+    public static final String Content_AboutMe_LoveOffair = "Content_AboutMe_LoveOffair";
+    public static final String Content_AboutMe_Nickname = "Content_AboutMe_Nickname";
+    public static final String Content_AboutMe_Signature = "Content_AboutMe_Signature";
+    public static final String Content_AboutMe_HeadImg = "Content_AboutMe_HeadImg";
+    public static final String Content_AboutMe_Money = "Content_AboutMe_Money";
+  /*  public static final String Content_Me_UserPic = "Content_Me_UserPic";
+    public static final String Content_Me_Nickname = "Content_Me_Nickname";
+    public static final String Content_Me_Sign = "Content_Me_Sign";
+    public static final String Content_Me_Money = "Content_Me_Money";*/
+    public static final String Content_Me_ID = "Content_Me_ID";
+
+    public static final String Content_Goods_Publish = "published";
+    public static final String Content_Goods_Sold = "sold";
+    public static final String Content_Goods_Remove = "removed";
+    public static final String GoodType = "goodtype";
+
+    public static final String Current_user_id = "current_user_id";
+    public static final String GoodType_Decorate = "decorate";
+    public static final String GoodType_Eleproduct = "eleproduct";
+    public static final String GoodType_Other = "other";
+    public static final String DATABASE_NAME = "mydatabase";
+    public static final String DATABASE_TABLE_USER = "_user";
+    public static final String DATABASE_TABLE_NEW = "_new";
+    public static final String DATABASE_TABLE_MOOD = "_mood";
+    public static final String DATABASE_TABLE_COUPON = "_coupon";
+    public static final String DATABASE_TABLE_GOOD = "_good";
+    public static final String DATABASE_TABLE_BANNER = "_banner";
+    public static final String DATABASE_BANNER_TYPE_IN = "in_school";
+    public static final String DATABASE_BANNER_TYPE_MIDDLE = "middle_school";
+    public static final String DATABASE_BANNER_TYPE_OUT = "out_school";
+    public static final String DATABASE_NEWS_TYPE_OUT = "out_school";
+    public static final String DATABASE_NEWS_TYPE_IN = "in_school";
+    public static final String DATABASE_MOOD_TYPE_IN = "in_school";
+    public static final String DATABASE_MOOD_TYPE_out = "out_school";
+    public static final int    DATABASE_LODING_NUM = 10;
+    public static final int    DATABASE_LODING_AD_NUM = 10;
+
+
+    public static final int prisecouponmoney = 3;
+    public static final int collectcouponmoney_hadprised = 5;
+    public static final int collectcouponmoney_unhadprised = 4;
+    public static final int sendMoodmoney = 2;
+
+
+    public static final boolean CloseADOnclick = true;
+
+    public static final String    ReferenceMoodId = "referenceMoodId";
+
+
+    public static final int DimissAnimTime = 1000;
+    public static final int EVENTBUS_REFLESH_TIME = 1000;
+    public static String getAPI(String url) {
+        return API + url;
+    }
+}

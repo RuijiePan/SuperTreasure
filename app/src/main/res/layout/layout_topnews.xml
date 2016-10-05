@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:orientation="vertical">
+
+   <!-- <LinearLayout
+        android:id="@+id/ll_banner"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.supertreasure.util.ChildViewPager
+            android:id="@+id/bannerViewPager"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height">
+        </com.supertreasure.util.ChildViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:orientation="horizontal"
+            android:gravity="bottom|center_horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/banner_dot_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    <View style="@style/cutting_line1"/>
+    </LinearLayout>-->
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <com.supertreasure.util.LoadMoreRecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+                </com.supertreasure.util.LoadMoreRecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

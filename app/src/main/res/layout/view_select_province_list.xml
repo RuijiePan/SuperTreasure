@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    >
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text90"
+        android:background="@drawable/bg_choose_address"
+        android:gravity="center"
+        android:text="@string/please_choose_province"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/text30"/>
+
+    <ListView
+        android:id="@+id/province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_choose_address_list"
+        android:divider="@color/address_list_divider"
+        android:dividerHeight="1dp">
+    </ListView>
+
+    <ListView
+        android:id="@+id/school"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_choose_address_list"
+        android:divider="@color/address_list_divider"
+        android:dividerHeight="1dp">
+    </ListView>
+
+</LinearLayout>

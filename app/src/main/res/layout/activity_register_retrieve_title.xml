@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_title_left"
+        android:layout_width="@dimen/text90"
+        android:layout_height="@dimen/text90"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="@dimen/text45"
+            android:layout_height="@dimen/text45"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text30"
+            android:background="@drawable/navigationbar_fanhui"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/register_count"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/text45" />
+
+    <LinearLayout
+        android:id="@+id/ll_title_right"
+        android:layout_width="@dimen/text90"
+        android:layout_height="@dimen/text90"
+        android:layout_gravity="center_vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="@dimen/text45"
+            android:layout_height="@dimen/text45"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text30"
+            android:background="@drawable/navigationbar_fanhui"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

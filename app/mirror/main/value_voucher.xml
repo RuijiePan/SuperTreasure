@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336358355 -->
+<screen>
+    <_content layout="@layout/value_voucher" >
+        <!-- Error creating screen file for file value_voucher.xml:
+        start tag unexpected character @ (position: TEXT seen ...     android:text="\u95c8\u3221\u5e09\u93cc\ufffd\r\n                    android:textColor="@... @36:41)  -->
+    </_content>
+</screen>

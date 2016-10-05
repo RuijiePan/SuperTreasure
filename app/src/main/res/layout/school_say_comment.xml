@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_comment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/text30"
+        android:layout_marginRight="@dimen/text30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/civ_photo"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            app:roundedCornerRadius="@dimen/corner_headview"
+            app:placeholderImage="@drawable/ic_girl"
+            app:failureImage="@drawable/icon_failure"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/text22"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/red_btn_bg_color"
+                android:id="@+id/tv_username"
+                android:textSize="@dimen/text35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者" />
+
+            <TextView
+                android:textSize="@dimen/text20"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:layout_marginLeft="135px"
+        android:textSize="30px"
+        android:layout_marginRight="@dimen/text30"
+        android:layout_marginBottom="@dimen/text30"
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text22"
+        android:text="2015过去了。。。"
+        android:textColor="@color/text_color_black" />
+
+    <View style="@style/cutting_grey_line_left_right_30px"/>
+</LinearLayout>

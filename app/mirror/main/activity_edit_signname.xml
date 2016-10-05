@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336357515 -->
+<screen>
+    <_content layout="@layout/activity_edit_signname" >
+        <!-- Error creating screen file for file activity_edit_signname.xml:
+        start tag unexpected character @ (position: TEXT seen ...x"\r\n        android:hint="\u7487\u75af\u7ded\u934f\u30e4\u91dc\u6d5c\u8679\ue137\u935a\ufffd\r\n        android:textSize="@... @67:28)  -->
+    </_content>
+</screen>

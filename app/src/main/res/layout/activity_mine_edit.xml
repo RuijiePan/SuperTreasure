@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.supertreasure.main.ActivityMine"
+    android:orientation="vertical"
+    android:background="@color/grey_backgroud"
+    >
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height">
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="@color/text_color_title"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_title_mine_mypersonality"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/title_textsize"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/btn_return"
+            android:layout_width="@dimen/headImgbar_mine_return_width"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/headImgbar_mine_return"
+                android:layout_height="@dimen/headImgbar_mine_return"
+                android:src="@drawable/navigationbar_back"
+                />
+        </LinearLayout>
+    </FrameLayout>-->
+
+    <include layout="@layout/toolbar_title"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/root"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <include layout="@layout/split_line_mine"/>
+
+           <LinearLayout
+               android:id="@+id/head_viewGroup"
+               android:background="@drawable/buttonselector"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/headImgbar_mine"
+               >
+               <LinearLayout
+                   android:id="@+id/tv_mine"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical">
+
+                   <TextView
+                       android:gravity="center_vertical"
+                       android:layout_marginLeft="@dimen/text60"
+                       android:textSize="@dimen/mine_dialog_contenttextsize"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                    android:text="@string/tx_activity_mine_head" />
+               </LinearLayout>
+
+                <LinearLayout
+                    android:layout_toRightOf="@id/tv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_gravity="right"
+                        android:layout_width="@dimen/headImgbar_mine"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/text20"
+                        android:gravity="center"
+                        >
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/headImg"
+                            app:roundedCornerRadius="@dimen/corner_headview"
+                            android:layout_width="@dimen/headImg_mine"
+                            android:layout_height="@dimen/headImg_mine"
+                            app:placeholderImage="@drawable/ic_girl"
+                            app:failureImage="@drawable/icon_failure"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/head_next"
+                        android:layout_marginRight="20px"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:alpha="@string/alpha_next"
+                            android:layout_width="@dimen/headImgbar_mine_next"
+                            android:layout_height="@dimen/headImgbar_mine_next"
+                            android:src="@drawable/boult"/>
+                    </LinearLayout>
+                </LinearLayout>
+           </LinearLayout>
+        <include layout="@layout/split_line_mine"/>
+
+        <LinearLayout
+            android:background="@color/text_color_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_currentAccount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/text60"
+                    android:layout_marginRight="@dimen/text3"
+                    android:background="@drawable/ic_setting_counter"
+                    android:layout_width="@dimen/text35"
+                    android:layout_height="@dimen/text35" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_currentAccount"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:text="@string/tx_activity_mine_currentAccount"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_currentAccount_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:maxLength="13"
+                    android:layout_marginRight="20px"
+                    android:text="15622625081"/>
+
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/text55"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_setting_nickname"
+                    android:layout_width="@dimen/text45"
+                    android:layout_height="@dimen/text45" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_nickname"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/tx_activity_mine_nickname"/>
+                <LinearLayout
+                    android:layout_width="350px"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tv_nickname_content"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/mine_dialog_contenttextsize"
+                        android:layout_marginRight="20px"
+                        android:maxLength="9"
+                        android:layout_toLeftOf="@+id/next"
+                        android:text="小黄"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/next"
+                    android:layout_marginRight="20px"
+                    android:layout_alignParentRight="true"
+                    android:alpha="@string/alpha_next"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_signName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/text55"
+                    android:background="@drawable/ic_setting_signature"
+                    android:layout_width="@dimen/text45"
+                    android:layout_height="@dimen/text45" />
+
+                <TextView
+                    android:id="@+id/tv_signName"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/tx_activity_mine_signName"/>
+                <LinearLayout
+                    android:layout_width="350px"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    >
+                <TextView
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:id="@+id/signature"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_marginRight="@dimen/text20"
+                    android:maxLength="30"
+                    android:text="请编辑你的个性签"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/next1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/text20"
+                    android:alpha="@string/alpha_next"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_personality"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/text55"
+                    android:background="@drawable/ic_setting_selfdom"
+                    android:layout_width="@dimen/text45"
+                    android:layout_height="@dimen/text45" />
+
+                <TextView
+                    android:id="@+id/tv_personality"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/tx_activity_mine_personality"/>
+                <LinearLayout
+                    android:layout_width="350px"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    >
+                <TextView
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_personality_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_marginRight="@dimen/text20"
+                    android:maxLength="20"
+                    android:text="活泼可爱"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/next2"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/text20"
+                    android:alpha="@string/alpha_next"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+                </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_hobby"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/text55"
+                    android:background="@drawable/ic_setting_hobby"
+                    android:layout_width="@dimen/text45"
+                    android:layout_height="@dimen/text45" />
+
+                <TextView
+                    android:id="@+id/tv_hobby"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/tx_activity_mine_hobby"/>
+                <LinearLayout
+                    android:layout_width="350px"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    >
+                <TextView
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_hobby_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_marginRight="@dimen/text20"
+                    android:maxLength="15"
+                    android:text="打篮球"/>
+                    </LinearLayout>
+                <ImageView
+                    android:id="@+id/next3"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/text20"
+                    android:alpha="@string/alpha_next"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/text60"
+                    android:layout_marginRight="@dimen/text5"
+                    android:background="@drawable/ic_setting_sex"
+                    android:layout_width="@dimen/text35"
+                    android:layout_height="@dimen/text35" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/tx_activity_mine_sex"/>
+                <TextView
+                    android:id="@+id/tv_sex_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_marginRight="@dimen/text20"
+                    android:maxLength="10"
+                    android:text="男"/>
+                <ImageView
+                    android:id="@+id/next4"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/text20"
+                    android:alpha="@string/alpha_next"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_loveOffair"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/text55"
+                    android:background="@drawable/ic_setting_love"
+                    android:layout_width="@dimen/text45"
+                    android:layout_height="@dimen/text45" />
+
+                <TextView
+                    android:id="@+id/tv_loveOffair"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/tx_activity_mine_loveOffair"/>
+                <TextView
+                    android:id="@+id/tv_loveOffair_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_marginRight="@dimen/text20"
+                    android:maxLength="10"
+                    android:text="热恋"/>
+                <ImageView
+                    android:id="@+id/next5"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/text20"
+                    android:alpha="@string/alpha_next"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+            </LinearLayout>
+
+            <View style="@style/cutting_grey_line_left_40px"/>
+
+            <LinearLayout
+                android:background="@drawable/buttonselector"
+                android:id="@+id/btn_mine_belongSchool"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text90"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/text60"
+                    android:layout_marginRight="@dimen/text5"
+                    android:background="@drawable/ic_setting_school"
+                    android:layout_width="@dimen/text35"
+                    android:layout_height="@dimen/text35" />
+
+                <TextView
+                    android:id="@+id/tv_belongSchool"
+                    android:layout_marginLeft="@dimen/text30"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/tx_activity_mine_belongSchool"/>
+                <LinearLayout
+                    android:layout_width="350px"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    >
+                <TextView
+                    android:id="@+id/tv_belongSchool_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/mine_dialog_contenttextsize"
+                    android:layout_marginRight="@dimen/text20"
+                    android:maxLength="10"
+                    android:text="肇庆学院"/>
+                    </LinearLayout>
+                <ImageView
+                    android:id="@+id/next6"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/text20"
+                    android:alpha="@string/alpha_next"
+                    android:layout_width="@dimen/headImgbar_mine_next"
+                    android:layout_height="@dimen/headImgbar_mine_next"
+                    android:src="@drawable/boult"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

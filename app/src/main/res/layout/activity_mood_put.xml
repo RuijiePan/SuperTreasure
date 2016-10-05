@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/text_color_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_titlt_back"/>
+
+    <com.rockerhieu.emojicon.EmojiconEditText
+        android:maxLength="450"
+        android:textColor="@color/black"
+        android:id="@+id/et_mood"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_mood_put_height"
+        android:layout_margin="@dimen/text15"
+        android:gravity="left|top"
+        android:textSize="@dimen/text35"
+        android:hint="@string/tv_mood_put"
+        android:background="@null" >
+    </com.rockerhieu.emojicon.EmojiconEditText>
+
+    <GridView
+        android:id="@+id/NoScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text15"
+        android:horizontalSpacing="@dimen/text7"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout>

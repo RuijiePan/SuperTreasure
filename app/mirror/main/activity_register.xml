@@ -1,0 +1,7 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336357655 -->
+<screen>
+    <_content layout="@layout/activity_register" >
+        <!-- Error creating screen file for file activity_register.xml:
+        start tag unexpected character @ (position: TEXT seen ...oid:hint="\u6748\u64b3\u53c6\u93b5\u5b2b\u6e80\u9359\ufffd\r\n                        android:paddingLeft="@... @87:47)  -->
+    </_content>
+</screen>

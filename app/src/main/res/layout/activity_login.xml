@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/black_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@color/text_color_black"
+        android:orientation="vertical">
+    </FrameLayout>
+
+    <com.supertreasure.util.ReboundScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/black_background"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="150px"
+                        android:gravity="center_horizontal"
+                        android:text="@string/superTreasure"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/text90" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/text22"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="@string/treasure_in_my_hand"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="@dimen/text35" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/text22"
+                            android:layout_weight="1"
+                            android:text="@string/school_i_have"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="@dimen/text35" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text45"
+                        android:layout_marginRight="@dimen/text45"
+                        android:layout_marginTop="130px"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="@dimen/text15"
+                                android:layout_marginBottom="@dimen/text15"
+                                android:background="@drawable/login_user"
+                                android:layout_width="@dimen/text60"
+                                android:layout_height="@dimen/text60" />
+                            <EditText
+                                android:id="@+id/et_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="100px"
+                                android:layout_marginLeft="@dimen/text30"
+                                android:background="@null"
+                                android:drawablePadding="@dimen/text35"
+                                android:focusable="true"
+                                android:inputType="phone"
+                                android:maxLength="11"
+                                android:hint="@string/please_input_phonenum"
+                                android:textColor="@color/colorwhite"
+                                android:textColorHint="@color/colorwhite"
+                                android:textSize="@dimen/text35" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/colorwhite" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginLeft="@dimen/text15"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="@dimen/text15"
+                                android:background="@drawable/login_locked"
+                                android:layout_width="@dimen/text60"
+                                android:layout_height="@dimen/text60" />
+                            <EditText
+                                android:id="@+id/et_pwd"
+                                android:layout_width="match_parent"
+                                android:layout_height="100px"
+                                android:layout_marginLeft="@dimen/text30"
+                                android:layout_marginTop="@dimen/text30"
+                                android:background="@null"
+                                android:drawablePadding="@dimen/text35"
+                                android:maxLength="11"
+                                android:hint="@string/please_input_password"
+                                android:inputType="textPassword"
+                                android:textColor="@color/colorwhite"
+                                android:textColorHint="@color/colorwhite"
+                                android:textSize="@dimen/text35" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/colorwhite" />
+
+                        <Button
+                            android:id="@+id/bt_forgot_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/text45"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/text30"
+                            android:background="@null"
+                            android:text="@string/forget_password"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="@dimen/text35" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bt_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text105"
+                        android:layout_marginLeft="@dimen/text45"
+                        android:layout_marginRight="@dimen/text45"
+                        android:layout_marginTop="@dimen/text30"
+                        android:textColor="@color/text_color_black"
+                        android:background="@drawable/layout_login_button"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textSize="@dimen/text35" />
+
+                    <Button
+                        android:id="@+id/bt_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text105"
+                        android:layout_marginLeft="@dimen/text45"
+                        android:layout_marginRight="@dimen/text45"
+                        android:layout_marginTop="@dimen/text20"
+                        android:background="@drawable/layout_register_button"
+                        android:gravity="center"
+                        android:text="@string/register"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/text35" />
+                    />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </FrameLayout>
+    </com.supertreasure.util.ReboundScrollView>
+
+</FrameLayout>

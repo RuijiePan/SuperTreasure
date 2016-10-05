@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/text_color_title" >
+
+        <LinearLayout
+            android:id="@+id/ll_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text90">
+            <Button
+                android:id="@+id/bt_title_left"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/text30"
+                android:layout_height="@dimen/text30"
+                android:layout_marginRight="@dimen/text60"
+                android:background="@drawable/navigationbar_back"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/text15"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/text30"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="已收藏优惠卷"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text35" />
+    </FrameLayout>
+    <com.supertreasure.util.ReboundScrollView
+        android:scrollbars="none"
+        android:id="@+id/scrollView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/draweeView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        fresco:failureImage="@drawable/icon_failure"
+        fresco:retryImage="@drawable/icon_retry"
+        fresco:placeholderImage="@drawable/image_placeholder_coupon"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="40px">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="温馨提示："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请在收藏日起，一周内使用，一周后将自动删除，若想继续使用，请到优惠卷首页收藏"/>
+        <TextView
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="免责声明："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text40"
+            android:gravity="center"
+            android:text="此由该商家负责，与超级校园宝无责任关系"/>
+    </LinearLayout>
+   </LinearLayout>
+    </com.supertreasure.util.ReboundScrollView>
+</LinearLayout>

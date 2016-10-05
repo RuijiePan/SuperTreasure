@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.supertreasure.main.ActivityHome"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:gravity="center"
+            android:background="@color/text_color_title" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text45"
+                android:textColor="@color/text_color_white"
+                android:text="@string/tx_activity_mine_coupon"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/bt_title_left"
+            android:layout_width="@dimen/headImgbar_mine_return_width"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/headImgbar_mine_return"
+                android:layout_height="@dimen/headImgbar_mine_return"
+                android:src="@drawable/navigationbar_back"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

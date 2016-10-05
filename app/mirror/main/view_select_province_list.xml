@@ -1,0 +1,64 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336358360 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/view_select_province_list">
+        <!-- TextView Examples:
+        <list_title text="@string/string_resource" />
+        <list_title text="Text literal" textSize="14sp" /> -->
+        <list_title />
+        <province>
+            <items layout="@android:layout/simple_list_item_1" >
+                <_item>
+                    <text1>Apple</text1>
+                </_item>
+                <_item>
+                    <text1>Orange</text1>
+                </_item>
+                <_item>
+                    <text1>Pear</text1>
+                </_item>
+                <_item>
+                    <text1>Grapefruit</text1>
+                </_item>
+                <_item>
+                    <text1>Banana</text1>
+                </_item>
+                <_item>
+                    <text1>Lemon</text1>
+                </_item>
+                <_item>
+                    <text1>Carrot</text1>
+                </_item>
+            </items>
+                </province>
+        <school>
+            <items layout="@android:layout/simple_list_item_1" >
+                <_item>
+                    <text1>Dalmatian</text1>
+                </_item>
+                <_item>
+                    <text1>Great Dane</text1>
+                </_item>
+                <_item>
+                    <text1>Shi Tzu</text1>
+                </_item>
+                <_item>
+                    <text1>Corgi</text1>
+                </_item>
+                <_item>
+                    <text1>Labrador</text1>
+                </_item>
+                <_item>
+                    <text1>Doberman</text1>
+                </_item>
+                <_item>
+                    <text1>Chihuahua</text1>
+                </_item>
+            </items>
+                </school>
+    </_content>
+</screen>

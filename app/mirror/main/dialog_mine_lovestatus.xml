@@ -1,0 +1,18 @@
+<!-- [ Mirror metadata ] generatedAt: 1457336357735 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/dialog_mine_lovestatus">
+        <!-- TextView Examples:
+        <tv_single text="@string/string_resource" />
+        <tv_single text="Text literal" textSize="14sp" /> -->
+        <tv_single />
+        <tv_firstlove />
+        <tv_heartlove />
+        <tv_married />
+        <tv_myquit />
+    </_content>
+</screen>
